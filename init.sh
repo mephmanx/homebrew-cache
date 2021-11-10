@@ -9,7 +9,7 @@ brew install cloudfoundry/tap/bosh-cli
 brew install bbl
 brew unlink terraform
 brew install tfenv
-tfenv install 1.0.2
-tfenv use 1.0.2
+tfenv install $1
+tfenv use $1
 mkdir -p /tmp/export
 tar -zcvf /tmp/export/homebrew.tar.gz /home/linuxbrew
