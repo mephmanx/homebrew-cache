@@ -11,3 +11,5 @@ brew unlink terraform
 brew install tfenv
 tfenv install 1.0.2
 tfenv use 1.0.2
+mkdir -p /tmp/export
+tar -zcvf /tmp/export/homebrew.tar.gz /home/linuxbrew
