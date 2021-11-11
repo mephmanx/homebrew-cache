@@ -13,6 +13,7 @@ brew install tfenv
 tfenv install $1
 tfenv use $1
 mkdir -p /tmp/export
-tar -zcvf /tmp/export/homebrew.tar.gz /home/linuxbrew
+cd /home/linuxbrew
+tar -zcvf /tmp/export/homebrew.tar.gz .linuxbrew
 gunzip /tmp/export/homebrew.tar.gz
 mv /tmp/export/homebrew.tar /tmp/export/homebrew-$1.tar
