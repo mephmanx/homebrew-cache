@@ -4,6 +4,7 @@ curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh 
 cd /tmp
 chmod +x /tmp/homebrew.sh
 ./homebrew.sh </dev/null
+PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 brew install cloudfoundry/tap/bosh-cli
 brew install bbl
