@@ -3,5 +3,4 @@ MAINTAINER mephmanx@gmail.com
 RUN yum install -y curl git gcc
 COPY init.sh /
 RUN chmod 777 /init.sh
-ENTRYPOINT ["/bin/bash", "-c"]
-ENTRYPOINT [ "./init.sh" ]
+ENTRYPOINT ["/bin/bash", "-c", "./init.sh"]
