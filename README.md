@@ -14,6 +14,7 @@ To use cache, extract tar file to:
 And then update PATH and init homebrew using the following commands:
 
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
+
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 Homebrew is then installed and ready to use as if it was installed using the script provided on the homebrew site.
