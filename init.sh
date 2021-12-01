@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Building cache for version -> $1"
+echo "Building homebrew cache and configuring active terraform version as -> $1"
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh -o /tmp/homebrew.sh > /dev/null
 cd /tmp
 chmod +x /tmp/homebrew.sh
