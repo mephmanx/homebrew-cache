@@ -19,4 +19,4 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 Homebrew is then installed and ready to use as if it was installed using the script provided on the homebrew site.
 
-The cache is built with core homebrew, bbl, cloudfoundry, bosh, terraform, and tfenv.  After installation, tfenv is used to install and set a specific version of terraform as active as the projects are constantly changing and the latest versions don't always play together well.
+The cache is built with core homebrew, bbl, cloudfoundry, bosh, terraform, cf-cli8, and tfenv.  After installation, tfenv is used to install and set a specific version of terraform as active as the projects are constantly changing and the latest versions don't always play together well.
