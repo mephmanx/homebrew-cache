@@ -10,6 +10,7 @@ PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 brew install cloudfoundry/tap/bosh-cli
 brew install bbl
+brew install cloudfoundry/tap/cf-cli@8
 brew unlink terraform
 brew install tfenv
 tfenv install $1
