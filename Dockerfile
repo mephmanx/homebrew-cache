@@ -2,8 +2,6 @@ FROM redhat/ubi8
 MAINTAINER mephmanx@gmail.com
 
 RUN yum install -y curl git gcc sudo
-RUN git config --global http.sslVerify false
-
 RUN useradd -m -s /bin/zsh linuxbrew && \
     usermod -aG wheel linuxbrew &&  \
     mkdir -p /home/linuxbrew/.linuxbrew && \
