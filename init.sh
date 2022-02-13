@@ -1,13 +1,8 @@
 #!/bin/bash
 
 echo "Building homebrew cache and configuring active terraform version as -> $1"
-
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh -o /tmp/homebrew.sh > /dev/null
-cd /tmp
-chmod +x /tmp/homebrew.sh
-./homebrew.sh </dev/null
-PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 brew install cloudfoundry/tap/bosh-cli
 brew install bbl
 brew install cloudfoundry/tap/cf-cli@8
